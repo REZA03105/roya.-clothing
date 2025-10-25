@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پوشاک رویا | فروشگاه لباس زنانه</title>
+  <meta name="description" content="پوشاک رویا | جدیدترین مدل‌های لباس زنانه، بلوز، شکت و روسری با طراحی خاص و رنگ‌های دل‌انگیز.">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-main: #f9b4c6;
+      --pink-light: #ffe6ed;
+      --text-dark: #333;
+      --text-light: #666;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #fff;
+      color: var(--text-dark);
+      text-align: center;
+    }
+
+    header {
+      background: var(--pink-main);
+      color: white;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .hero {
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #fff, var(--pink-light));
+    }
+    .hero h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+      color: var(--text-dark);
+    }
+    .hero p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(249,180,198,0.3);
+      width: 90%;
+      max-width: 400px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid #ffe0ea;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 5px 18px rgba(249,180,198,0.45);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1rem;
+      text-align: right;
+    }
+
+    .card-content h3 {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .card-content p {
+      color: #777;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: var(--pink-light);
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: #555;
+      border-top: 1px solid #f5c2d1;
+    }
+
+    /* واکنش‌گرا برای دسکتاپ */
+    @media (min-width: 768px) {
+      .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>پوشاک رویا</header>
+
+  <section class="hero">
+    <h1>به فروشگاه پوشاک رویا خوش آمدید</h1>
+    <p>مدرن‌ترین مدل‌های لباس زنانه با طراحی خاص و رنگ‌های دل‌انگیز</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <img src="IMAGE_1.jpg" alt="روسری نخی قواره کوچک">
+      <div class="card-content">
+        <h3>روسری نخی قواره کوچک</h3>
+        <p>مدل‌های جدید و خاص برای استایل روزانه</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="IMAGE_2.jpg" alt="بلوز نخ پنبه آستین دار">
+      <div class="card-content">
+        <h3>بلوز نخ پنبه آستین‌دار اعلا</h3>
+        <p>سبک و لطیف، مناسب فصل پاییز. تا سایز ۴۴.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="IMAGE_3.jpg" alt="شکت چهارخونه پشمی">
+      <div class="card-content">
+        <h3>شکت چهارخونه پشمی</h3>
+        <p>جنس عالی، در دو سایز موجود. تا سایز ۴۶ می‌خوره.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    تمامی حقوق محفوظ است © ۲۰۲۵ پوشاک رویا
+  </footer>
+
+</body>
+</html>
